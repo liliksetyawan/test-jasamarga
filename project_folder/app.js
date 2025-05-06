@@ -1,14 +1,15 @@
 require("dotenv").config();
 const express = require("express");
 const { connectDB } = require("./config/database");
+const employeeRoutes = require('./routes/employee'); // Import routes
 
 const app = express();
-
-
 
 connectDB();
 
 app.use(express.json());
+
+app.use('/api', employeeRoutes);
 
 
 const PORT = process.env.PORT || 3000;
