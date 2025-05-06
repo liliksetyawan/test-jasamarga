@@ -1,0 +1,507 @@
+{
+	"info": {
+		"_postman_id": "1c585fb0-49c2-4892-9f39-d1115b2fa6bf",
+		"name": "Data Kepegawaian",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20238937"
+	},
+	"item": [
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/employee?page=1&size=10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"employee"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "size",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "385"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"181-BF9x/PscNjdSx15pKEIZoZ+FrUo\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 May 2025 14:11:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 2,\n            \"nik\": \"11013\",\n            \"name\": \"Jarot\",\n            \"is_active\": true,\n            \"start_date\": \"2021-08-31T17:00:00.000Z\",\n            \"end_date\": \"2028-08-31T17:00:00.000Z\",\n            \"created_at\": null,\n            \"updated_at\": null\n        },\n        {\n            \"id\": 1,\n            \"nik\": \"11012\",\n            \"name\": \"Budi\",\n            \"is_active\": true,\n            \"start_date\": \"2022-12-11T17:00:00.000Z\",\n            \"end_date\": \"2029-12-11T17:00:00.000Z\",\n            \"created_at\": null,\n            \"updated_at\": null\n        }\n    ],\n    \"pagination\": {\n        \"page\": 1,\n        \"pageSize\": 10\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Report",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/employee/report",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"employee",
+								"report"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/employee/report",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"employee",
+										"report"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "944"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3b0-bDL3hbKrwEUMxWEEUOk1VycxLY0\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 May 2025 16:08:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"employee_id\": 1,\n            \"nik\": \"11012\",\n            \"name\": \"Budi\",\n            \"is_active\": true,\n            \"gender\": \"Laki-Laki\",\n            \"age\": \"28 Years Old\",\n            \"education_name\": \"SMKN 7 Jakarta\",\n            \"education_level\": \"SMA\",\n            \"family_data\": \"1 Istri & 2 Anak\"\n        },\n        {\n            \"employee_id\": 16,\n            \"nik\": \"11016\",\n            \"name\": \"Suma\",\n            \"is_active\": true,\n            \"gender\": \"Laki-Laki\",\n            \"age\": \"25 Years Old\",\n            \"education_name\": \"SMA ST\",\n            \"education_level\": \"SMA\",\n            \"family_data\": \"1 Istri & 0 Anak\"\n        },\n        {\n            \"employee_id\": 3,\n            \"nik\": \"11015\",\n            \"name\": \"Agus\",\n            \"is_active\": true,\n            \"gender\": null,\n            \"age\": null,\n            \"education_name\": null,\n            \"education_level\": null,\n            \"family_data\": \"-\"\n        },\n        {\n            \"employee_id\": 16,\n            \"nik\": \"11016\",\n            \"name\": \"Suma\",\n            \"is_active\": true,\n            \"gender\": \"Laki-Laki\",\n            \"age\": \"25 Years Old\",\n            \"education_name\": \"Univ ABC\",\n            \"education_level\": \"Strata 1\",\n            \"family_data\": \"1 Istri & 0 Anak\"\n        },\n        {\n            \"employee_id\": 2,\n            \"nik\": \"11013\",\n            \"name\": \"Jarot\",\n            \"is_active\": true,\n            \"gender\": \"Laki-Laki\",\n            \"age\": \"29 Years Old\",\n            \"education_name\": \"Universitas Negeri Yogyakarta\",\n            \"education_level\": \"Strata 1\",\n            \"family_data\": \"-\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/employee/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"employee",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/employee/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"employee",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "220"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"dc-gbSLYuUX7s9mmFia/5cyd58LOV8\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 May 2025 14:21:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 3,\n        \"nik\": \"11015\",\n        \"name\": \"Agus\",\n        \"is_active\": true,\n        \"start_date\": \"2022-12-11T00:00:00.000Z\",\n        \"end_date\": \"2029-12-11T00:00:00.000Z\",\n        \"created_at\": \"2025-05-06T14:13:43.415Z\",\n        \"updated_at\": \"2025-05-06T14:13:43.415Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nik\": \"11016\",\n    \"name\": \"Ari\",\n    \"is_active\": true,\n    \"start_date\": \"2022-12-11\",\n    \"end_date\": \"2029-12-11\",\n    \"profile\": {\n        \"place_of_birth\": \"Bali\",\n        \"date_of_birth\": \"2000-01-11\",\n        \"gender\": \"Laki-Laki\",\n        \"is_married\": true,\n        \"prof_pict\": \"\"\n    },\n    \"education\": [\n        {\n            \"level\": \"SMA\",\n            \"name\": \"SMA ST\",\n            \"description\": \"Sekolah\"\n        },\n        {\n            \"level\": \"Strata 1\",\n            \"name\": \"Univ ABC\",\n            \"description\": \"University\"\n        }\n    ],\n    \"family\": [\n        {\n            \"name\": \"Santi\",\n            \"identifier\": \"12131313\",\n            \"job\": \"IRT\",\n            \"place_of_birth\": \"Bali\",\n            \"date_of_birth\": \"2000-01-11\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": true,\n            \"relation_status\": \"Istri\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"employee"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nik\": \"11016\",\n    \"name\": \"Ari\",\n    \"is_active\": true,\n    \"start_date\": \"2022-12-11\",\n    \"end_date\": \"2029-12-11\",\n    \"profile\": {\n        \"place_of_birth\": \"Bali\",\n        \"date_of_birth\": \"2000-01-11\",\n        \"gender\": \"Laki-Laki\",\n        \"is_married\": true,\n        \"prof_pict\" :\"\"\n    },\n    \"education\": [\n        {\n            \"level\": \"SMA\",\n            \"name\": \"SMA ST\",\n            \"description\": \"Sekolah\"\n        },\n        {\n            \"level\": \"Strata 1\",\n            \"name\": \"Univ ABC\",\n            \"description\": \"University\"\n        }\n    ],\n    \"family\": [\n        {\n            \"name\": \"Santi\",\n            \"identifier\": \"12131313\",\n            \"job\": \"IRT\",\n            \"place_of_birth\": \"Bali\",\n            \"date_of_birth\": \"2000-01-11\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": true,\n            \"relation_status\": \"Istri\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"employee"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "59"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3b-3pNYbc+6U+QvWfHEiQtP6uq88/0\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 May 2025 15:35:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Employee created successfully\",\n    \"employeeId\": 15\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nik\": \"11016\",\n    \"name\": \"Suma\",\n    \"is_active\": true,\n    \"start_date\": \"2022-12-11\",\n    \"end_date\": \"2029-12-11\",\n    \"profile\": {\n        \"place_of_birth\": \"Bali\",\n        \"date_of_birth\": \"2000-01-11\",\n        \"gender\": \"Laki-Laki\",\n        \"is_married\": true,\n        \"prof_pict\": \"\"\n    },\n    \"education\": [\n        {\n            \"level\": \"SMA\",\n            \"name\": \"SMA ST\",\n            \"description\": \"Sekolah\"\n        },\n        {\n            \"level\": \"Strata 1\",\n            \"name\": \"Univ ABC\",\n            \"description\": \"University\"\n        }\n    ],\n    \"family\": [\n        {\n            \"name\": \"Sri\",\n            \"identifier\": \"12131313\",\n            \"job\": \"IRT\",\n            \"place_of_birth\": \"Bali\",\n            \"date_of_birth\": \"2000-01-11\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": true,\n            \"relation_status\": \"Istri\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/employee/16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"employee",
+								"16"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nik\": \"11016\",\n    \"name\": \"Suma\",\n    \"is_active\": true,\n    \"start_date\": \"2022-12-11\",\n    \"end_date\": \"2029-12-11\",\n    \"profile\": {\n        \"place_of_birth\": \"Bali\",\n        \"date_of_birth\": \"2000-01-11\",\n        \"gender\": \"Laki-Laki\",\n        \"is_married\": true,\n        \"prof_pict\": \"\"\n    },\n    \"education\": [\n        {\n            \"level\": \"SMA\",\n            \"name\": \"SMA ST\",\n            \"description\": \"Sekolah\"\n        },\n        {\n            \"level\": \"Strata 1\",\n            \"name\": \"Univ ABC\",\n            \"description\": \"University\"\n        }\n    ],\n    \"family\": [\n        {\n            \"name\": \"Sri\",\n            \"identifier\": \"12131313\",\n            \"job\": \"IRT\",\n            \"place_of_birth\": \"Bali\",\n            \"date_of_birth\": \"2000-01-11\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": true,\n            \"relation_status\": \"Istri\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/employee/16",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"employee",
+										"16"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "43"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2b-t5mtPhztXVD5AEfGEyoe1CborbI\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 May 2025 15:53:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Employee updated successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/employee/15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"employee",
+								"15"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/employee/15",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"employee",
+										"15"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "63"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3f-fwvosijaFn4dg3M1m+0TQV4bRis\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 May 2025 16:00:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Employee and associated data deleted successfully\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
