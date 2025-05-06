@@ -1,0 +1,18 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "root",
+    "database": "data_kepegawaian",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": "5432"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "EeKKhZToSIqGbrzwiYKGhlUyAefEIGZX",
+    "database": "railway",
+    "host": "junction.proxy.rlwy.net",
+    "dialect": "postgres",
+    "port": "19756"
+  }
+}

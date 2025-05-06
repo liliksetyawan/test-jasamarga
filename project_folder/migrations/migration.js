@@ -75,8 +75,8 @@ module.exports = {
                 type: Sequelize.ENUM("Islam", "Katolik", "Buddha", "Protestan", "Konghucu"),
                 allowNull: true,
             },
-            if_life: { type: Sequelize.BOOLEAN, allowNull: false, defaultValue: true },
-            if_divorced: { type: Sequelize.BOOLEAN, allowNull: false, defaultValue: false },
+            is_life: { type: Sequelize.BOOLEAN, allowNull: false, defaultValue: true },
+            is_divorced: { type: Sequelize.BOOLEAN, allowNull: false, defaultValue: false },
             relation_status: {
                 type: Sequelize.ENUM("Suami", "Istri", "Anak", "Anak Sambung"),
                 allowNull: true,
